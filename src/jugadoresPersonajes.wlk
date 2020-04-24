@@ -1,5 +1,5 @@
 object luisa {
-	var personajeActivo = noHayPersonaje
+	var personajeActivo = floki
 }
 
 
@@ -26,6 +26,3 @@ object mario {
 }
 
 
-object noHayPersonaje {
-	// no hace falta ponerle ningún método, es solamente para marcarle a Luisa que no tiene ningún personaje activo
-}

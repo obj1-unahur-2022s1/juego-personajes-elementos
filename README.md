@@ -14,7 +14,7 @@ Como recién estamos empezando a aprender programación con objetos, vamos a mod
 - **ballesta** y **jabalina**, dos _armas_. `floki` tiene una de estas armas.
 - **castillo**, **aurora** (que es una vaca) y **tipa** (que es un árbol), tres _elementos_. 
 
-De cada elemento nos va a interesar el alto. El `castillo` mide 20 metros, `aurora` mide 1 metro, la `tipa` arranca en 8 metros pero puede crecer (ya veremos cómo).
+De cada elemento nos va a interesar la _altura_. El `castillo` mide 20 metros de alto, `aurora` 1 metro, la `tipa` arranca en 8 metros pero puede crecer (ya veremos cómo).
 Además: debemos manejar el _nivel de defensa_ del `castillo` (un valor numérico que arranca en 150), y si `aurora` _está viva_ o no (nace viva).
 
 
