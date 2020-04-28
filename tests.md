@@ -25,5 +25,3 @@ Verificar que:
 	- la defensa del `castillo` es 146, y que 
 	- la `ballesta` está cargada, y le quedan 8 flechas.
 
-<br> 
-Para los primeros dos tests, dibujar el diagrama de objetos como queda al final, después de ejecutar todo el test.
