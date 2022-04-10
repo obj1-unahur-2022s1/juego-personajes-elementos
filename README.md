@@ -1,9 +1,5 @@
 # Juego con personajes y elementos
  
-[![Build Status](https://travis-ci.org/wollok/juegoPersonajesElementos.svg?branch=master)](https://travis-ci.org/wollok/juegoPersonajesElementos)
-
-
-
 Nos piden modelar un juego en el que cada jugador maneja un conjunto de personajes (p.ej. guerreros, trabajadores, sacerdotes). En el juego hay distintos elementos (p.ej. casas, animales, ríos). Cuando un personaje se encuentra con un elemento, hace cosas que pueden afectar a ambos.
 
 Como recién estamos empezando a aprender programación con objetos, vamos a modelar una situación muy reducida, en la que aparecen solamente estos objetos:
@@ -73,5 +69,32 @@ En cada momento del juego, `luisa` está manejando uno de sus personajes, es el 
 El objeto `luisa` debe entender el mensaje `aparece(elemento)`. 
 Cuando le llega este mensaje, `luisa` le dice a su personaje activo que encuentre al elemento. 
 Luisa no nace con ningún personaje activo, hay que asignarle uno.
+
+# Tests que hay que realizar
+
+Se pide armar estos tres tests
+
+1. `luisa` tiene como personaje activo a `mario`. A `luisa` le aparece primero `aurora`, y después el `castillo`. <br> Después de esto, verificar que: 
+	- el valor total recolectado por `mario` es 45, 
+	- `mario` es feliz (porque lo último que se encontró, el `castillo`, tiene 20 metros de alto), y 
+	- el `castillo` tiene 170 de defensa. 
+
+
+1. `floki` tiene como arma la jabalina. 
+`luisa` tiene como personaje activo a `mario`. A `luisa` le aparece la `tipa`. Después el personaje activo cambia a `floki`, y después de este cambio, a `luisa` le aparecen primero `aurora` y después el `castillo`. <br>
+Verificar que: 
+	- el valor total recolectado por `mario` es 16, 
+	- la altura de la `tipa` es 9 metros, 
+	- `mario` no es feliz, 
+	- `aurora` está muerta, 
+	- la defensa del `castillo` es 150, y 
+	- la `jabalina` no está cargada.
+
+1. `floki` tiene como arma la ballesta, `luisa` tiene como personaje activo a `floki`. A `luisa` le aparecen primero `aurora` y después el `castillo`. <br>
+Verificar que: 
+	- el valor total recolectado por `mario` es 0, 
+	- `aurora` está viva, 
+	- la defensa del `castillo` es 146, y que 
+	- la `ballesta` está cargada, y le quedan 8 flechas.
 
 
